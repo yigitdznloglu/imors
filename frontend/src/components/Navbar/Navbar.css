@@ -1,0 +1,21 @@
+nav img {
+  height: 4rem;
+  border-radius: 2rem;
+}
+
+nav .navbar-brand {
+  padding: 0 !important;
+}
+
+nav svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#nav-dropdown-profile LinkContainer:hover {
+  color: black !important;
+}
+
+#nav-dropdown-profile .dropdown-item:hover {
+  color: black !important;
+}

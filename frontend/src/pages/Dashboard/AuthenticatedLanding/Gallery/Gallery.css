@@ -1,0 +1,25 @@
+#gallery {
+    height: 100%;
+    width: 100%;
+}
+
+#gallery .gallery-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#gallery .gallery-header button {
+    margin-top: -1rem;
+}
+
+#gallery .gallery-header svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.modal-dialog form .form-check {
+    margin-bottom: 1rem;
+}

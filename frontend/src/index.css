@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Myanmar Khyay";
+  src: url("fonts/Khyay-Regular.ttf") format("truetype");
+}
+
+:root {
+  /* Change Bootstrap theme color variables here*/
+  --bs-dark-rgb: 11, 11, 11 !important;
+  --bs-body-bg: #111111 !important;
+  --bs-body-color-rgb: 11, 11, 11;
+  --bs-font-sans-serif: "Myanmar Khyay" !important
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  color: inherit;
+  vertical-align: baseline;
+}
+
+
+body {
+  line-height: 1;
+  font-family: "Myanmar Khyay";
+  color: #22303d;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+div#root {
+  height: 100vh
+}
+
+h1 {
+  font-size: 2rem;
+}

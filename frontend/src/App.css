@@ -1,0 +1,8 @@
+div#App{
+  height: calc(100vh - 5rem);
+}
+
+div#App > * {
+  height: calc(100vh - 5rem);
+  padding: 4rem;
+}

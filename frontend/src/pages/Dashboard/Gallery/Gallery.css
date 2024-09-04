@@ -1,0 +1,40 @@
+#gallery {
+  height: 100vh;
+  width: calc(100% - 16rem);
+  margin-left: 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+#gallery h1{
+  font-size: 2em;
+  margin-top: 15px;
+}
+
+.gif-placeholder{
+  margin-bottom: 10px;
+  padding: 10px;
+  width:200px
+}
+
+.gif-placeholder img{
+  width:700px
+}
+
+.large-button{cursor: pointer;
+  background-color: #22303d;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: padding 0.3s ease;
+  margin-top: 5px;
+}
+
+.checkbox-label {
+  margin-left: 10px; 
+}

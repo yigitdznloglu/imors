@@ -1,0 +1,49 @@
+div#song-list {
+    height: 100%;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    border-right: 1px solid var(--bs-dark-text-emphasis);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+div#song-list > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div#song-list > div > svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+ul {
+    height: 90%;
+    overflow: auto;
+    max-width: 24rem;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+ul li {
+    list-style-type: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+ul li:hover {
+    background-color: var(--bs-dark-text-emphasis);
+    cursor: pointer;
+}

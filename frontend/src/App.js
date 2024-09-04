@@ -7,8 +7,6 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ProtectedRoute from "./context/auth/protectedRoute";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./pages/Profile/Profile";
-import History from "./pages/History/History";
-import Favorites from "./pages/Favorites/Favorites";
 
 function App() {
   useEffect(() => {
@@ -22,18 +20,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Separate Route to conditionally render Navbar based on the path */}
         <Route element={<LayoutWithNavbar />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />}  />
-          <Route path="/history" element={<History />}  />
-          <Route path="/favorites" element={<Favorites  />} />
-          {/*
-          <Route path="/profile" element={<ProtectedRoute element={<Profile />} />} />
-          <Route path="/history" element={<ProtectedRoute element={<History />} />} />
-          <Route path="/favorites" element={<ProtectedRoute element={<Favorites />} />} /> */}
         </Route>
-        {/* Route without Navbar */}
         <Route path="/auth" element={<Auth />} />
       </Routes>
     </Router>
@@ -43,12 +33,11 @@ function App() {
 function LayoutWithNavbar() {
   const location = useLocation();
   
-  // This is an alternative place to exclude Navbar from certain paths if needed
   return (
     <>
       {location.pathname !== "/auth" && <Navbar />}
       <div id="App">
-        <Outlet />  {/* This component renders the active Route's children */}
+        <Outlet />
       </div>
     </>
   );

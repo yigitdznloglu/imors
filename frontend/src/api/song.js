@@ -34,9 +34,3 @@ export async function deleteSong(songId) {
       console.error("Failed to delete song:", error);
     });
 }
-export async function getUserHistory() {
-  const endpoint = "songs/history";
-  return makeHTTPGETRequest(endpoint).then((response) => {
-    return response;
-  });
-}

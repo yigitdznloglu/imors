@@ -1,8 +1,6 @@
 import { isAuthenticated } from "../../context/auth/auth";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { FaRegStar } from "react-icons/fa";
-import { MdHistory } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { signout } from "../../context/auth/auth";
 

@@ -132,6 +132,11 @@ REACT_APP_OVERRIDE=
    REACT_APP_API_URL=
    REACT_APP_OVERRIDE=
    ```
+
+### Add models
+- Go to [Justin Pinkey's Repo](https://github.com/justinpinkney/awesome-pretrained-stylegan2) and download and add  the following models to backend/workers/models:  
+   - modern art, wildlife, maps, ukiyoe faces, microscope images...
+
 ## Workflow
 - User uploads a song
 - User chooses a style model and sends a generate request
